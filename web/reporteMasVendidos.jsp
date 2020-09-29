@@ -20,7 +20,9 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <title>Reporte mas vendidos</title>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/scriptMasVendidos.js" type="text/javascript"></script>
+        <title>Reporte más vendidos</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -43,12 +45,12 @@
                 </nav>
             </div>
             <div class="formulario">
-                <form class="was-validated" method="POST" action="#">
+                <form class="was-validated" method="POST" action="javascript:listar()">
                     <table id="tablaReporteV" class="table">
                         <thead class="thead-dark">
                             <tr>
                                 <th colspan="2">
-                                    Reporte mas vendidos
+                                    Reporte más vendidos
                                 </th>
                             </tr>
                         </thead>
@@ -62,7 +64,7 @@
                                 </td>
                                 <td>
                                     <label for="fechVendidosFin">Fecha final:&nbsp;</label>
-                                    <input type="text" id="fechVendidosIni" name="fechVendidosFin" size="12" placeholder="XX/XX/XXXX" required/>
+                                    <input type="text" id="fechVendidosFin" name="fechVendidosFin" size="12" placeholder="XX/XX/XXXX" required/>
                                     <div class="valid-feedback">Valido</div>
                                     <div class="invalid-feedback" >Por favor rellena el campo</div>
                                 </td> 
@@ -76,6 +78,20 @@
                     </table>
                 </form>
             </div>
+        </div>
+        <div id="contents">
+            <section style="float: left; padding-left: 24px; width: 45%;">
+
+                <table class="menú">
+                    <thead>
+                        <tr>
+                            <th colspan="6"><h2>Menú</h2></th>
+                        </tr>
+
+                    </thead> 
+                    <tbody id="body"></tbody>
+                </table>
+            </section>
         </div>
     </body>
 </html>

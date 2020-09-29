@@ -17,15 +17,13 @@ public class Existencias {
     @GET
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
     public List<modelo.Producto> list() {
-        System.out.println("API");
         try {
             System.out.println(adminExistencias.getInstance().listarProductos().toString());
-            
             return adminExistencias.getInstance().listarProductos();
         } catch (Exception ex) {
             System.out.println("Aqui hay un error");
             ExceptionsManager.SHOW_ERROR(ex.getMessage());
         }
-        return null;
+        return adminExistencias.getInstance().listarProductos();
     }
 }

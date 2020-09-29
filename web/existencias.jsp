@@ -18,18 +18,18 @@
     </head>
     <body id="existencias"  onload="init();">
         <div id="contents">
-                <section style="float: left; padding-left: 24px; width: 45%;">
+            <section style="float: left; padding-left: 24px; width: 45%;">
 
-                    <table class="menu">
-                        <thead>
-                            <tr>
-                                <th colspan="6"><h2>Menú</h2></th>
-                            </tr>
+                <table class="menu">
+                    <thead>
+                        <tr>
+                            <th colspan="6"><h2>Menú</h2></th>
+                        </tr>
 
-                        </thead> 
-                        <tbody id="body"></tbody>
-                    </table>
-                </section>
-            </div>
+                    </thead> 
+                    <tbody id="body"></tbody>
+                </table>
+            </section>
+        </div>
     </body>
 </html>

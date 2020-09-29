@@ -1,6 +1,5 @@
 package APIs;
 
-import accessData.adminExistencias;
 import accessData.adminVendidos;
 import exceptions.ExceptionsManager;
 import java.util.List;
@@ -14,20 +13,20 @@ import javax.ws.rs.Produces;
  * @author Kevin Sandoval
  */
 
-@Path("vendidos")
-public class ProductosVendidos {
+@Path("productosmas")
+public class ProductosMas {
     
     @GET
     @Path("{inicio}/{fin}")
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
     public List<modelo.Producto> list(@PathParam("inicio") String inicio, @PathParam("fin") String fin) {
         try {
-            System.out.println(adminVendidos.getInstance().listarVendidos(inicio, fin).toString());
+            System.out.println(adminVendidos.getInstance().listarMasVendidos(inicio, fin).toString());
             
-            return adminVendidos.getInstance().listarVendidos(inicio, fin);
+            return adminVendidos.getInstance().listarMasVendidos(inicio, fin);
         } catch (Exception ex) {
             ExceptionsManager.SHOW_ERROR(ex.getMessage());
         }
-        return adminVendidos.getInstance().listarVendidos(inicio, fin);
+        return adminVendidos.getInstance().listarMasVendidos(inicio, fin);
     }
 }

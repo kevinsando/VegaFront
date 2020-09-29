@@ -21,6 +21,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(APIs.Existencias.class);
+        resources.add(APIs.ProductosMas.class);
         resources.add(APIs.ProductosVendidos.class);
     }   
 }

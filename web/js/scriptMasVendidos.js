@@ -10,8 +10,10 @@ function listar() {
     console.log("listando...");
     $.ajax({
         type: "GET",
-        url: 
-        "http://localhost:8084/VegaWeb/api/existencias;charset=UTF-8"
+        url: "http://localhost:8084/VegaWeb/api/productosmas/" +
+        $('fechVendidosIni').val() + "/" +
+        $('fechVendidosFin').val() +
+        ";charset=UTF-8"
     }).done(function (data) {
         cargarTabla(data);
     }).fail(function (jqXHR, textStatus, errorThrown) {
