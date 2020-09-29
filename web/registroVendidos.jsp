@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" href="VEGA.png">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -26,7 +27,7 @@
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" href="inicio.jsp">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="registroVendidos.jsp">Venta</a>
@@ -34,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
                     </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="existencias.jsp">Existencias</a>
+                        </li>
                 </ul>
             </nav>
         </div>
