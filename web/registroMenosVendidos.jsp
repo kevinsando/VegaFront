@@ -1,6 +1,6 @@
 <%-- 
-    Document   : registroVendidos
-    Created on : Sep 26, 2020, 2:15:45 PM
+    Document   : registroMenosVendidos
+    Created on : Sep 30, 2020, 5:18:15 PM
     Author     : MIGUEL
 --%>
 
@@ -20,7 +20,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        <title>Venta</title>
+        <title>Menos vendidos</title>
     </head>
     <body id="regVentas">
         <div>
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="inicio.jsp">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="registroVendidos.jsp">Venta</a>
+                        <a class="nav-link" href="registroVendidos.jsp">Venta</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
@@ -44,19 +44,19 @@
                             <a class="nav-link" href="existencias.jsp">Existencias</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
+                            <a class="nav-link disabled" href="registroMenosVendidos.jsp">Menos vendidos</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <div id="contentsVenta">
+        <div id="contentsMenos">
             <form method="POST" action="#">
                 <button type="submit" class="btn btn-info btn-block botonGenerar" value="Submit Button">Generar registro</button>
             </form>
             <table class="table tablaExis1">
                 <thead class="thead-dark">
                     <tr>
-                        <th colspan="3"><h2>Productos vendidos</h2></th>
+                        <th colspan="3"><h2>Productos menos vendidos</h2></th>
                     </tr>
                 </thead> 
             </table>
@@ -65,12 +65,11 @@
                     <tr>
                         <th>Fecha vendido</th>
                         <th>Nombre</th>
-                        <th>Cliente</th>                        
+                        <th>Codigo</th>                        
                     </tr>
                 </thead>
-                <tbody id="body2"></tbody>
+                <tbody id="body4"></tbody>
             </table>
         </div>
-            <nav><a href="reporteMasVendidos.jsp" style="color: black"> <p>Reporte</p> </a> </nav>
     </body>
 </html>

@@ -18,8 +18,8 @@
 }
 
 .formulario{
-    margin: 250px;
-    margin-left: 400px;
+    margin: 150px;
+    margin-left: 360px;
 }
 
 .boton{
@@ -42,8 +42,43 @@
 
 .rowTam{
     height: 250px;
+    margin-top: 20px;
 }
 
 header{
     height: 60px;
+}
+
+#contents{
+    text-align: center;
+    width: 70%;
+    margin: 100px;
+    margin-left: 200px;
+}
+
+#contentsVenta{
+    text-align: center;
+    width: 80%;
+    margin: 100px;
+    margin-left: 130px;
+}
+
+#contentsMenos{
+    text-align: center;
+    width: 80%;
+    margin: 100px;
+    margin-left: 130px;
+}
+
+.tablaExis1{
+    margin-bottom: 0px;
+}
+
+.tablaExis2{
+    border-radius: 5px;
+    border-color: lightgrey;
+}
+
+.botonGenerar{
+    margin-bottom: 30px;
 }

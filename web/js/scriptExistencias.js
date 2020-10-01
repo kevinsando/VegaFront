@@ -11,7 +11,7 @@ function listar() {
     $.ajax({
         type: "GET",
         url: 
-        "http://localhost:8084/VegaWeb/api/existencias;charset=UTF-8"
+        "http://localhost:8080/VegaWeb/api/existencias;charset=UTF-8"
     }).done(function (data) {
         cargarTabla(data);
     }).fail(function (jqXHR, textStatus, errorThrown) {

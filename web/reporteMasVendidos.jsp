@@ -30,6 +30,11 @@
                 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
                     <ul class="navbar-nav">
                         <li class="nav-item">
+                            <a class="navbar-brand" href="#">
+                                <img src="Logo vega 2.png" alt="Logo" style="width:30px;">
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="inicio.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
@@ -40,6 +45,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="existencias.jsp">Existencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
                         </li>
                     </ul>
                 </nav>
@@ -78,20 +86,6 @@
                     </table>
                 </form>
             </div>
-        </div>
-        <div id="contents">
-            <section style="float: left; padding-left: 24px; width: 45%;">
-
-                <table class="menú">
-                    <thead>
-                        <tr>
-                            <th colspan="6"><h2>Menú</h2></th>
-                        </tr>
-
-                    </thead> 
-                    <tbody id="body"></tbody>
-                </table>
-            </section>
         </div>
     </body>
 </html>
