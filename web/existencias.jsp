@@ -67,9 +67,10 @@
                         <tr>
                             <th>Nombre</th>
                             <th>Codigo</th>
+                            <th>Descripción</th>
                             <th>Cantidad</th>
-                            <th>Precio</th>
-                            <th>Precio Venta</th>
+                            <th>Grupo</th>
+                            <th>Fabricante</th>
                         </tr>
                     </thead>
                     <tbody id="body"></tbody>

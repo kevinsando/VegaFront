@@ -17,16 +17,15 @@ import javax.ws.rs.Produces;
 public class ProductosMas {
     
     @GET
-    @Path("{inicio}/{fin}")
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    public List<modelo.Producto> list(@PathParam("inicio") String inicio, @PathParam("fin") String fin) {
+    public List<modelo.Vendido> list() {
         try {
-            System.out.println(adminVendidos.getInstance().listarMasVendidos(inicio, fin).toString());
+            System.out.println(adminVendidos.getInstance().listarMasVendidos().toString());
             
-            return adminVendidos.getInstance().listarMasVendidos(inicio, fin);
+            return adminVendidos.getInstance().listarMasVendidos();
         } catch (Exception ex) {
             ExceptionsManager.SHOW_ERROR(ex.getMessage());
         }
-        return adminVendidos.getInstance().listarMasVendidos(inicio, fin);
+        return adminVendidos.getInstance().listarMasVendidos();
     }
 }

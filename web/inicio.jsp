@@ -39,7 +39,7 @@
                             <a class="nav-link" href="registroVendidos.jsp">Venta</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
+                            <a class="nav-link" href="reporteMasVendidos.jsp">Más vendidos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="existencias.jsp">Existencias</a>

@@ -11,7 +11,7 @@ function listar() {
     $.ajax({
         type: "GET",
         url: 
-        "http://localhost:8080/VegaWeb/api/existencias;charset=UTF-8"
+        "http://localhost:8084/VegaWeb/api/existencias;charset=UTF-8"
     }).done(function (data) {
         cargarTabla(data);
     }).fail(function (jqXHR, textStatus, errorThrown) {
@@ -34,9 +34,10 @@ function createRow(table, item){
     tr.html(
               "<td>" + item.atrNombre      + "</td>"
             + "<td>" + item.atrCodigo      + "</td>"
+            + "<td>" + item.atrDescripcion + "</td>"
             + "<td>" + item.atrCantidad    + "</td>"
-            + "<td>" + item.atrPrecio      + "</td>"
-            + "<td>" + item.atrPrecioVenta + "</td>"
+            + "<td>" + item.atrGrupo       + "</td>"
+            + "<td>" + item.atrFabricante  + "</td>"
             );
     table.append(tr);
 }

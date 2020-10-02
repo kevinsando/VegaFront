@@ -8,6 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <link rel="shortcut icon" href="VEGA.png">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
@@ -15,11 +16,12 @@
         
         <link href="css/default.css" rel="stylesheet" type="text/css"/>
         
-        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/scriptMenosVendidos.js" type="text/javascript"></script>
         <title>Menos vendidos</title>
     </head>
     <body id="regVentas">
@@ -50,7 +52,7 @@
             </nav>
         </div>
         <div id="contentsMenos">
-            <form method="POST" action="#">
+            <form method="POST" action="javascript:listar()">
                 <button type="submit" class="btn btn-info btn-block botonGenerar" value="Submit Button">Generar registro</button>
             </form>
             <table class="table tablaExis1">
@@ -68,7 +70,7 @@
                         <th>Codigo</th>                        
                     </tr>
                 </thead>
-                <tbody id="body4"></tbody>
+                <tbody id="body"></tbody>
             </table>
         </div>
     </body>
