@@ -37,16 +37,16 @@
                             <a class="nav-link" href="inicio.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroVendidos.jsp">Venta</a>
+                            <a class="nav-link" href="registroVendidos.jsp">Venta de productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
+                            <a class="nav-link" href="reporteMasVendidos.jsp">Productos más vendidos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" href="existencias.jsp">Existencias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
+                            <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
                         </li>
                     </ul>
                 </nav>

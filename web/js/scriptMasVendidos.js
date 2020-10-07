@@ -25,9 +25,13 @@ function cargarTabla(datos) {
     
     list = datos;
     table = $("#body");
+    head = $("#head");
     table.html("");
+    head.html("");
+    createHead(head);
     for(var item in datos){
         createRow(table, datos[item]);
+        
     }
     //location.href = "tablaMas.jsp";
 }
@@ -40,6 +44,16 @@ function createRow(table, item){
 
             );
     table.append(tr);
+}
+function createHead(head){
+    var tr = $("<tr/>");
+    tr.html(
+              "<th>" + "Fecha vendido"   + "</th>"
+            + "<th>" + "Nombre"          + "</th>"
+            + "<th>" + "Codigo"          + "</th>"
+
+            );
+    head.append(tr);
 }
 function failListMenu() {
     console.log("ERROR");

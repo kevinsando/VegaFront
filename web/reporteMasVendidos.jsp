@@ -21,7 +21,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
         <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/scriptMasVendido.js" type="text/javascript"></script>
+        <script src="js/scriptMasVendidos.js" type="text/javascript"></script>
         <title>Reporte más vendidos</title>
     </head>
     <body>
@@ -38,16 +38,16 @@
                             <a class="nav-link" href="inicio.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroVendidos.jsp">Venta</a>
+                            <a class="nav-link" href="registroVendidos.jsp">Venta de productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="reporteMasVendidos.jsp">Más vendidos</a>
+                            <a class="nav-link disabled" href="reporteMasVendidos.jsp">Productos más vendidos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="existencias.jsp">Existencias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
+                            <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
                         </li>
                     </ul>
                 </nav>
@@ -90,12 +90,13 @@
                 <section style="float: left; padding-left: 24px; width: 45%;">
 
                     <table class="table table-hover tablaExis2">
-                        <thead class="thead-light">
-                            <tr>
+                        <thead class="thead-light" id="head">
+                        <!--    <tr>
                                 <th>Fecha vendido</th>
                                 <th>Nombre</th>
                                 <th>Codigo</th>                        
                             </tr>
+                        -->
                         </thead>
                         <tbody id="body"></tbody>
                     </table>

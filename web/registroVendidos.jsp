@@ -34,20 +34,20 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inicio.jsp">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="registroVendidos.jsp">Venta</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
-                    </li>
-                    <li class="nav-item">
+                            <a class="nav-link" href="inicio.jsp">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="registroVendidos.jsp">Productos vendidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reporteMasVendidos.jsp">Productos más vendidos</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="existencias.jsp">Existencias</a>
-                    </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
-                    </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
+                        </li>
                 </ul>
             </nav>
         </div>
@@ -73,6 +73,6 @@
                 <tbody id="body"></tbody>
             </table>
         </div>
-            <nav><a href="reporteMasVendidos.jsp" style="color: black"> <p>Reporte</p> </a> </nav>
+           <!-- <nav><a href="reporteMasVendidos.jsp" style="color: black"> <p>Reporte</p> </a> </nav>-->
     </body>
 </html>

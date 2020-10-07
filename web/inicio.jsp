@@ -36,16 +36,16 @@
                             <a class="nav-link disabled" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroVendidos.jsp">Venta</a>
+                            <a class="nav-link" href="registroVendidos.jsp">Venta de Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="reporteMasVendidos.jsp">Más vendidos</a>
+                            <a class="nav-link" href="reporteMasVendidos.jsp">Productos más vendidos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="existencias.jsp">Existencias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
+                            <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,10 +54,10 @@
         <div class="container-fluid">
             <div class="row justify-content-between rowTam">
                 <div class="col">
-                    <a href="registroVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Vendidos</p></a>
+                    <a href="registroVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Productos vendidos</p></a>
                 </div>
                 <div class="col">
-                    <a href="reporteMasVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Reporte mas vendidos</p></a>
+                    <a href="reporteMasVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Reporte productos más vendidos</p></a>
                 </div>
             </div>
             <div class="row justify-content-between rowTam">
@@ -65,7 +65,7 @@
                     <a href="existencias.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Existencias</p></a>
                 </div>
                 <div class="col">
-                    <a href="registroMenosVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Registro menos vendidos</p></a>
+                    <a href="registroMenosVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Registro productos menos vendidos</p></a>
                 </div>
             </div>
         </div>
