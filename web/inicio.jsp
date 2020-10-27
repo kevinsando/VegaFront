@@ -33,7 +33,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="index.html">Inicio</a>
+                            <a class="nav-link disabled" href="inicio.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registroVendidos.jsp">Venta de Productos</a>
@@ -46,6 +46,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cantidadProducto.jsp">Reporte específico</a>
                         </li>
                     </ul>
                 </nav>
@@ -66,6 +69,9 @@
                 </div>
                 <div class="col">
                     <a href="registroMenosVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Registro productos menos vendidos</p></a>
+                </div>
+                <div class="col">
+                    <a href="cantidadProducto.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Cantidad de un producto específico</p></a>
                 </div>
             </div>
         </div>

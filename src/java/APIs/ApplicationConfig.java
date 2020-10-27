@@ -20,6 +20,7 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(APIs.Especifico.class);
         resources.add(APIs.Existencias.class);
         resources.add(APIs.ProductosMas.class);
         resources.add(APIs.ProductosMenos.class);

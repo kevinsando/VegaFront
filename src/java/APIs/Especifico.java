@@ -12,21 +12,8 @@ import javax.ws.rs.Produces;
  *
  * @author Kevin Sandoval
  */
-@Path("existencias")
-public class Existencias {
-    
-    @GET
-    @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    public List<modelo.Producto> list() {
-        try {
-            System.out.println(adminExistencias.getInstance().listarProductos().toString());
-            return adminExistencias.getInstance().listarProductos();
-        } catch (Exception ex) {
-            System.out.println("Aqui hay un error");
-            ExceptionsManager.SHOW_ERROR(ex.getMessage());
-        }
-        return adminExistencias.getInstance().listarProductos();
-    }
+@Path("especifico")
+public class Especifico{
     
     /**
      *
@@ -36,9 +23,8 @@ public class Existencias {
     @GET
     @Path("{nomCod}")
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
-    public modelo.Producto consultaProducto(@PathParam("nomCod") String nomCod){
+    public modelo.Producto list(@PathParam("nomCod") String nomCod){
         try {
-            System.out.println("Nombre:"+nomCod);
             System.out.println(adminExistencias.getInstance().getCantidad(nomCod));
             return adminExistencias.getInstance().getCantidad(nomCod);
         } catch (Exception ex) {

@@ -49,6 +49,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cantidadProducto.jsp">Reporte específico</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -91,12 +94,6 @@
 
                     <table class="table table-hover tablaExis2">
                         <thead class="thead-light" id="head">
-                        <!--    <tr>
-                                <th>Fecha vendido</th>
-                                <th>Nombre</th>
-                                <th>Codigo</th>                        
-                            </tr>
-                        -->
                         </thead>
                         <tbody id="body"></tbody>
                     </table>
