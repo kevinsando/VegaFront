@@ -50,10 +50,21 @@
                         <li class="nav-item">
                             <a class="nav-link" href="cantidadProducto.jsp">Reporte específico</a>
                         </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="registroCreditos.jsp">Ingresar credito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productosVendidos.jsp">Productos vendidos(mes)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="alertaAgotados.jsp">Productos agotados</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
+        <div class="opciones">
+         <a href="alertaAgotados.jsp" id="botones" class="btn btn-danger btn-block" role="button"><p class="parra2">Productos agotados</p></a>
         <div class="container-fluid">
             <div class="row justify-content-between rowTam">
                 <div class="col">
@@ -74,6 +85,15 @@
                     <a href="cantidadProducto.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Cantidad de un producto específico</p></a>
                 </div>
             </div>
+            <div class="row justify-content-between rowTam">
+                <div class="col">
+                    <a href="productosVendidos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Productos vendidos por mes</p></a>
+                </div>
+                <div class="col">
+                    <a href="registroCreditos.jsp" id="botones" class="btn btn-info" role="button"><p class="parra">Registrar credito</p></a>
+                </div>
+            </div>
+        </div>
         </div>
     </body>
 </html>

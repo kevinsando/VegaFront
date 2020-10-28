@@ -50,6 +50,12 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="cantidadProducto.jsp">Reporte específico</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registroCreditos.jsp">Ingresar credito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productosVendidos.jsp">Productos vendidos(mes)</a>
+                    </li>
                 </ul>
             </nav>
         </div>
