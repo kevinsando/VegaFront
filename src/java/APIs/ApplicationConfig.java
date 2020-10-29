@@ -25,5 +25,7 @@ public class ApplicationConfig extends Application {
         resources.add(APIs.ProductosMas.class);
         resources.add(APIs.ProductosMenos.class);
         resources.add(APIs.ProductosVendidos.class);
+        resources.add(APIs.RegistroCredito.class);
+        resources.add(APIs.ReporteMes.class);
     }   
 }

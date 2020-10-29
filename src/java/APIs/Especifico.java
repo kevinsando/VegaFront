@@ -25,7 +25,7 @@ public class Especifico{
     @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
     public modelo.Producto list(@PathParam("nomCod") String nomCod){
         try {
-            System.out.println(adminExistencias.getInstance().getCantidad(nomCod));
+            System.out.println("API:"+adminExistencias.getInstance().getCantidad(nomCod));
             return adminExistencias.getInstance().getCantidad(nomCod);
         } catch (Exception ex) {
             System.out.println("Aqui hay un error");

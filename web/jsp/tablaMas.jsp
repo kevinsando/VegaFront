@@ -9,8 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/scriptMasVendido.js" type="text/javascript"></script>
+        <script src="../js/jquery.min.js" type="text/javascript"></script>
+        <script src="../js/scriptMasVendido.js" type="text/javascript"></script>
         <title>Reporte Más vendidos</title>
     </head>
     <body>

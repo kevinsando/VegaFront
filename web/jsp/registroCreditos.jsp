@@ -1,19 +1,20 @@
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="shortcut icon" href="VEGA.png">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
-        <link href="css/default.css" rel="stylesheet" type="text/css"/>
-        
+
+        <link href="../css/default.css" rel="stylesheet" type="text/css"/>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+        <script src="../js/jquery.min.js" type="text/javascript"></script>
+        <script src="../js/scriptRegCredito.js" type="text/javascript"></script>
         <title>Registro Creditos</title>
     </head>
     <body id="regCreditos">
@@ -26,19 +27,19 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="inicio.jsp">Inicio</a>
+                        <a class="nav-link" href="../inicio.jsp">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registroVendidos.jsp">Venta</a>
+                        <a class="nav-link" href="registroVendidos.jsp">Productos vendidos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reporteMasVendidos.jsp">Reporte de ventas</a>
+                        <a class="nav-link" href="reporteMasVendidos.jsp">Productos más vendidos</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="existencias.jsp">Existencias</a>
+                        <a class="nav-link" href="existencias.jsp">Existencias</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="registroMenosVendidos.jsp">Menos vendidos</a>
+                        <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cantidadProducto.jsp">Reporte específico</a>
@@ -47,13 +48,13 @@
                         <a class="nav-link disabled" href="registroCreditos.jsp">Ingresar credito</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productosVendidos.jsp">Productos vendidos(mes)</a>
+                        <a class="nav-link" href="productosVendidos.jsp">Reporte ventas del mes</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="content-creditos">
-            <form method="POST" action="#">
+            <form method="POST" action="javascript:guardar()">
                 <table class="table tablaCred2">
                     <thead class="thead-dark">
                         <tr>
@@ -79,8 +80,8 @@
                                        autofocus="autofocus" />
                             </td>
                             <td>
-                               <label for="numFactura">numero de factura:&nbsp;</label>
-                               <input type="text" id="numFactura" name="numFactura" size="20">
+                                <label for="numFactura">numero de factura:&nbsp;</label>
+                                <input type="text" id="numFactura" name="numFactura" size="20">
                             </td>
                         </tr>
                         <tr>
@@ -89,8 +90,8 @@
                                 <input type="text" id="nombreCliente" name="nombreCliente" size="40">
                             </td>
                             <td>
-                               <label for="fechaSo">Fecha de solicitud:&nbsp;</label>
-                               <input type="text" id="fechaSo" name="fechaSo" size="20">
+                                <label for="fechaSo">Fecha de solicitud:&nbsp;</label>
+                                <input type="text" id="fechaSo" name="fechaSo" size="20">
                             </td>
                         </tr>
                         <tr>
@@ -103,8 +104,8 @@
                                        autofocus="autofocus">
                             </td>
                             <td rowspan="2">
-                               <label for="montoCre">monto de credito:&nbsp;</label>
-                               <input type="text" id="montoCre" name="montoCre" size="20">
+                                <label for="montoCre">monto de credito:&nbsp;</label>
+                                <input type="text" id="montoCre" name="montoCre" size="20">
                             </td>
                         </tr>
                         <tr>
@@ -122,5 +123,6 @@
                 </table>
             </form>
         </div>
+  
     </body>
 </html>

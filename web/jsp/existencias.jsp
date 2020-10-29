@@ -16,11 +16,11 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-        
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/scriptExistencias.js" type="text/javascript"></script>
-        
-        <link href="css/default.css" rel="stylesheet" type="text/css"/>
+
+        <script src="../js/jquery.min.js" type="text/javascript"></script>
+        <script src="../js/scriptExistencias.js" type="text/javascript"></script>
+
+        <link href="../css/default.css" rel="stylesheet" type="text/css"/>
         <title>Existencias</title>
     </head>
     <body id="existencias"  onload="init();">
@@ -34,19 +34,28 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="inicio.jsp">Inicio</a>
+                            <a class="nav-link" href="../inicio.jsp">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="registroVendidos.jsp">Venta de productos</a>
+                            <a class="nav-link" href="registroVendidos.jsp">Productos vendidos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="reporteMasVendidos.jsp">Productos más vendidos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="existencias.jsp">Existencias</a>
+                            <a class="nav-link  disabled" href="existencias.jsp">Existencias</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="registroMenosVendidos.jsp">Productos menos vendidos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cantidadProducto.jsp">Reporte específico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registroCreditos.jsp">Ingresar credito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productosVendidos.jsp">Reporte ventas del mes</a>
                         </li>
                     </ul>
                 </nav>
